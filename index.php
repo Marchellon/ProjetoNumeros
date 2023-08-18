@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin:*");
+header("Content-Type: application/json");
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Gerar um número aleatório entre 0 e 100
     $numeroAleatorio = rand(0, 100);
